@@ -19,13 +19,15 @@ import React, {useState, createContext} from 'react';
 // import CounterReducer from './usereducer-hook/CounterReducer.js';
 // import TodoReducer from './usereducer-hook/TodoReducer.js';
 // import CounterCallback from './usecallback-hook/CounterCallback.js';
-import TodoCallBack from './usecallback-hook/TodoCallBack.js';
+// import TodoCallBack from './usecallback-hook/TodoCallBack.js';
+// import TodoUseMemo from './usememo-hook/TodoUseMemo.js';
+import TodoUseEffect from './customhook/TodoUseFetch.js';
 
 
 export const UserContext = createContext();
 function App() {
   // for usecontext hook
-  const [user, setUser] = useState({name: 'Amit Kumar', age: 30, country:'canada'});
+  // const [user, setUser] = useState({name: 'Amit Kumar', age: 30, country:'canada'});
 
   return (
     <div>
@@ -51,7 +53,9 @@ function App() {
         {/* <CounterReducer /> */}
         {/* <TodoReducer /> */}
         {/* <CounterCallback /> */}
-        <TodoCallBack />
+        {/* <TodoCallBack /> */}
+        {/* <TodoUseMemo /> */}
+        <TodoUseEffect />
     </div>
   );
 }
